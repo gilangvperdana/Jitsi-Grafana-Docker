@@ -20,10 +20,13 @@ Installation:
 Goes to Directory 1.Jitsi-Docker5765-1
 Edit an SSL options,etc:
 $ cd 1.Jitsi-Docker5765-1
+$ cp env.txt .env
 $ nano .env
 
 After .env has been configured:
 $ docker-compose up -d
+
+If you failed install jitsi from my repo, you can install from official repo jitsi https://github.com/jitsi/docker-jitsi-meet/releases/latest 
 
 Make sure jitsi componenct has been deployed:
 $ docker ps

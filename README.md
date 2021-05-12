@@ -61,14 +61,14 @@ EDIT:
 [[inputs.http_response]]
   name_override = "jvb-health"
   ## List of urls to query.
-  urls = ["http://your.ip:8080/about/health"]
+  urls = ["http://your.domain:8080/about/health"]
   
 [[inputs.http]]
   name_override = "jvb-stats"
 
   ## URL of each server in the service's cluster
   urls = [
-    "http://your.ip:8080/colibri/stats",
+    "http://your.domain:8080/colibri/stats",
   ]
 
 save,exit.

@@ -6,7 +6,8 @@ Environment:
     1. Ubuntu21.04 Server
     2. 4GB RAM
     3. 48GB Storage
-    4. Docker 20.10.2
+    4. Docker 20.10.2 ( $ apt install -y docker.io)
+    5. Docker Compose 1.25.0 ( $ apt install -y docker-compose)
 
 Mission:
     1. Deploy Jitsi on Docker

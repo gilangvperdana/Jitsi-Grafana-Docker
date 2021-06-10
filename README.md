@@ -35,7 +35,12 @@ jitsi/jvb , jitsi/web , jitsi/prosody , jitsi/jicofo
 
 if all have been fulfilled, jitsi can be accessed https://localhost:80
 
-if you want to modify the frontend of your jitsi, you can go to the "3.TemplateJitsiFrontEnd" folder and edit the file, if you have, you can move it into the jitsi / web container by:
+if you want to modify the frontend of your jitsi, you can go to the "3.TemplateJitsiFrontEnd" folder and edit the file:
+$ nano app.bundle.min.js
+use ctrl+f to search for the keyword "CHANGE HEADER TITTLE HERE" to change the header title and search for "HEADER SUBTITTLE HERE" to change the header subtitle.
+save, exit.
+
+if you have, you can move edited file into the jitsi / web container by:
 $ docker cp app.bundle.min.js container-jitsi-web-id:/usr/share/jitsi-meet/libs
 
 last, if you want to reinstall jitsi, you can delete the config folder first, then start with docker-compose up again.

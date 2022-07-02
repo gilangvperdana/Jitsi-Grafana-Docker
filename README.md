@@ -49,6 +49,14 @@ $ sudo rm -rf /root/.jitsi-meet-cfg/
 $ docker container prune (optional)
 $ docker network prune (optional)
 $ docker-compose up -d
+
+UPDATE, if you get continuous errors, please turn off WEB RTC :
+nano .env
+---
+ENABLE_SCTP=1
+ENABLE_COLIBRI_WEBSOCKET=0
+ENABLE_XMPP_WEBSOCKET=0
+---
 ```
 
 ## 2. Monitoring Jitsi
